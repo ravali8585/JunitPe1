@@ -17,14 +17,7 @@ import static org.junit.Assert.*;
             System.out.println("After");
             repeat=null;
         }
-        @BeforeClass
-        public static void setUpBeforeClass(){
-            System.out.println("BeforeClass");
-        }
-        @AfterClass
-        public static void tearDownAfterClass(){
-            System.out.println("AfterClass");
-        }
+        
         @Test
         public void givenStringIsAValidString(){
             //act
