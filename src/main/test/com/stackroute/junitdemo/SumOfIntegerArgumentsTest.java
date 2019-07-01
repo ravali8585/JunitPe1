@@ -17,14 +17,7 @@ public class SumOfIntegerArgumentsTest {
             System.out.println("After");
             sumofintegerargs=null;
         }
-        @BeforeClass
-        public static void setUpBeforeClass(){
-            System.out.println("BeforeClass");
-        }
-        @AfterClass
-        public static void tearDownAfterClass(){
-            System.out.println("AfterClass");
-        }
+        
         @Test
         public void givenStringShouldReturnIntSum(){
             //act
