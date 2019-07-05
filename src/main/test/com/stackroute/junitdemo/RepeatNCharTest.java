@@ -17,6 +17,14 @@ import static org.junit.Assert.*;
             System.out.println("After");
             repeat=null;
         }
+<<<<<<< HEAD
+=======
+        
+        @Test
+        public void givenStringIsAValidString(){
+            //act
+            String result=repeat.repeatchar("srujana",4);
+>>>>>>> 47f856533756e0182fa120edf9d4b342dcc036c9
 
         @Test
         public void stringManipulate() {

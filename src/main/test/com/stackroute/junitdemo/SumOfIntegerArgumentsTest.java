@@ -17,7 +17,11 @@ public class SumOfIntegerArgumentsTest {
             System.out.println("After");
             sumofintegerargs=null;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 47f856533756e0182fa120edf9d4b342dcc036c9
         @Test
         public void givenStringShouldReturnIntSum(){
             //act

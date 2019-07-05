@@ -21,6 +21,11 @@ public class StringReverseTest {
             str= null;
 
         }
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 47f856533756e0182fa120edf9d4b342dcc036c9
 
         @Test
         public void givenReverseStringShouldReturnReverseString(){
@@ -68,4 +73,8 @@ public class StringReverseTest {
 
 
 
+<<<<<<< HEAD
 }
+=======
+    }
+>>>>>>> 47f856533756e0182fa120edf9d4b342dcc036c9
