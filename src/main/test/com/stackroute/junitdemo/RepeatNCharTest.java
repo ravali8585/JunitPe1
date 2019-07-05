@@ -17,37 +17,19 @@ import static org.junit.Assert.*;
             System.out.println("After");
             repeat=null;
         }
-        @BeforeClass
-        public static void setUpBeforeClass(){
-            System.out.println("BeforeClass");
-        }
-        @AfterClass
-        public static void tearDownAfterClass(){
-            System.out.println("AfterClass");
-        }
-        @Test
-        public void givenStringIsAValidString(){
-            //act
-            String result=repeat.repeatchar("srujana",4);
 
-            //assert
-            assertEquals("srujanajanajanajanajana",result);
-        }
         @Test
-        public void givenStringIsInValidString(){
-            //act
-            String result=repeat.repeatchar("0",4);
-
-            //assert
-            assertEquals("Enter a valid string",result);
+        public void stringManipulate() {
+            String expectedResult="Stackrouterouterouterouterouteroute";
+            String actualResult=repeat.stringManipulate("Stackroute",5);
+            assertEquals(expectedResult,actualResult);
         }
-        @Test
-        public void givenStringIsNull(){
-            //act
-            String result=repeat.repeatchar("",4);
 
-            //assert
-            assertEquals("Enter a valid string",result);
+        @Test
+        public void stringManipulate1() {
+            String expectedResult="Stackroutetete";
+            String actualResult=repeat.stringManipulate("Stackroute",2);
+            assertEquals(expectedResult,actualResult);
         }
 
 

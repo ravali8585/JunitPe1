@@ -18,38 +18,32 @@ public class GuessTheRandonNumberTest {
             System.out.println("After");
             guessTheRandomNumber=null;
         }
-        @BeforeClass
-        public static void setUpBeforeClass(){
-            System.out.println("BeforeClass");
-        }
-        @AfterClass
-        public static void tearDownAfterClass(){
-            System.out.println("AfterClass");
-        }
+
         @Test
         public void guessedNumberIsMoreThanGivenNumber(){
             //act
-            String result=guessTheRandomNumber.playguessingGame(6,1);
+            String result=guessTheRandomNumber.guessingNumber(6,1);
 
             //assert
-            assertEquals("Number guessed number is less than the original number",result);
+            assertEquals("guessed number is less than the original number",result);
         }
         @Test
         public void guessedNumberIsLessThanGivenNumber(){
             //act
-            String result=guessTheRandomNumber.playguessingGame(6,16);
+            String result=guessTheRandomNumber.guessingNumber(6,16);
 
             //assert
-            assertEquals("Number guessed number is more than the original number",result);
+            assertEquals("guessed number is more than the original number",result);
         }
         @Test
         public void guessedNumberMatchesGivenNumber(){
             //act
-            String result=guessTheRandomNumber.playguessingGame(16,16);
+            String result=guessTheRandomNumber.guessingNumber(16,16);
 
             //assert
-            assertEquals("Number guessed matches the original number",result);
+            assertEquals("guessed matches the original number",result);
         }
+
 
 
     }

@@ -21,21 +21,6 @@ public class StringReverseTest {
             str= null;
 
         }
-        @BeforeClass
-        public static void setUpBeforeClass() {
-
-            System.out.println("Beforeclass");
-
-        }
-
-        @AfterClass
-
-        public static  void tearDownBeforeClass() {
-            System.out.println("Afterclass");
-
-        }
-
-
 
         @Test
         public void givenReverseStringShouldReturnReverseString(){
@@ -64,10 +49,23 @@ public class StringReverseTest {
             assertEquals("london",result);
 
         }
+    @Test
+    public void givenStringShouldReturnNotNull() {
 
+        //arrange
 
+        //act
 
-
-
+        String result = str.stringReverse(" ");
+        //assert
+        assertNotNull(result);
 
     }
+
+
+
+
+
+
+
+}

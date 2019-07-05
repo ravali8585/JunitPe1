@@ -17,14 +17,7 @@ public class SumOfIntegerArgumentsTest {
             System.out.println("After");
             sumofintegerargs=null;
         }
-        @BeforeClass
-        public static void setUpBeforeClass(){
-            System.out.println("BeforeClass");
-        }
-        @AfterClass
-        public static void tearDownAfterClass(){
-            System.out.println("AfterClass");
-        }
+
         @Test
         public void givenStringShouldReturnIntSum(){
             //act
@@ -36,7 +29,7 @@ public class SumOfIntegerArgumentsTest {
         @Test
         public void givenStringWithoutIntegerShouldReturnErrorMessage(){
             //act
-            String result=sumofintegerargs.getSumOfArguments("srujana");
+            String result=sumofintegerargs.getSumOfArguments("ravali");
 
             //assert
             assertEquals("please enter all integers",result);

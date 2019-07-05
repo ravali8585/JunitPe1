@@ -55,7 +55,7 @@ public class OddOrEvenTest {
 
         //act
 
-        String result= check.test(15);
+        String result= check.test(0);
 
         //assert
         assertEquals(null,result);

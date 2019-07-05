@@ -8,8 +8,8 @@ public class StringReverse {
         {
             return str1;
         }
-        String reverse="";
-        for(int i=str1.length()-1;i>=0;i--)
+        String reverse=" ";
+        for(int i=str1.length()-1;i>=0;i--)// to find reverse of a given string
         {
             reverse=reverse+str1.charAt(i);
         }

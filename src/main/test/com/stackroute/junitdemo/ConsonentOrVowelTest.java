@@ -60,6 +60,19 @@ public class ConsonentOrVowelTest {
         //assert
         assertEquals("Not an alphabet",result);
 
+
+    }
+    @Test
+    public void givenNumberShouldReturnNull() {
+
+        //arrange
+
+        //act
+
+        String result = check.print(" ");
+        //assert
+        assertNotNull(result);
+
     }
 
 

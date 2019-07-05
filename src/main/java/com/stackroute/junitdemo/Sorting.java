@@ -1,58 +1,35 @@
 package com.stackroute.junitdemo;
 
+import java.util.Arrays;
+
 public class Sorting
 {
-    public class Variable{
-        String sortedString;
-        String evenNumSum;
-        boolean checkString;
-
+    String compare(int a, int b) //compare values a nd b
+     {
+        if (a > 15) {
+            return "True";
+        } else {
+            return "False";
+        }
     }
-    public Variable sort(int num)
+
+    public String sortNumber(int n) //to sort the given numbers
     {
-        Variable variable = new Variable();
-        num=Math.abs(num);
-        int temp=num;
-        int count=0;
-        int sum=0;
-        int sortednum=0;
-        while(num>0)
-        {
-            int rem=num%10;
-            count++;
-            num=num/10;
-            if(rem%2==0)
-                sum=sum+rem;
-        }
-        int intArr[]=new int[count];
-        for(int i=0;temp>0;i++)
-        {
-            intArr[i]=temp%10;
-            temp=temp/10;
-        }
-        for(int i=0;i<count;i++)
-        {
-            for(int j=i;j<count;j++)
-            {
-                if(intArr[i]<intArr[j])
-                {
-                    temp=intArr[i];
-                    intArr[i]=intArr[j];
-                    intArr[j]=temp;
-                }
+
+        char[] ch = String.valueOf(n).toCharArray();
+        Arrays.sort(ch);
+        int sum = 0;
+        for (char c : ch) {
+            if (((int) c) % 2 == 0) {
+                sum += (int) c - (int) '0';
             }
         }
-        for(int i=0;i<count;i++)
-        {
-            sortednum=sortednum*10+intArr[i];
+        String str = "";
+        for (char c : ch) {
+            str = c + str;
         }
-        /*if(temp<0)
-        {
-            sortednum=-sortednum;
-        }*/
-        variable.sortedString = "Sorted number in non-interesting order:"+sortednum;
-        variable.evenNumSum="Sum of even numbers"+sum;
-        variable.checkString=(sum>15?true:false);
-        return variable;
+        return "Sorted number in non-increasing order : " + str + "\n" +
+                "Sum of even numbers : " + sum + "\n" + compare(sum, 15);
+
     }
 }

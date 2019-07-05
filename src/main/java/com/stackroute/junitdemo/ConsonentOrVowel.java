@@ -5,10 +5,9 @@ public class ConsonentOrVowel {
     {
         int i=0;
 
+        char ch=str.charAt(0);//This is writing for taking fisrt charecter in th given string
 
-        char ch=str.charAt(0);
-        //char ch=sc.nextChar();
-        switch(ch)
+        switch(ch)// switch case for writing to pass vowels
         {
             case  'a' :
             case 'e'  :

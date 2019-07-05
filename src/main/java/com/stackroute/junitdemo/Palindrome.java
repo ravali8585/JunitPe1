@@ -6,14 +6,15 @@ public class Palindrome {
 
 
     public static String palin(int n) {
-        int r, sum = 0, rev = 0, temp = n;
+        int rem, sum = 0, rev = 0, temp = n;
 
         while (n > 0) {
-            r = n % 10;  //getting remainder
-            rev = (rev * 10) + r;
+            rem = n % 10;  //getting remainder
+            rev = (rev * 10) + rem;// getting reverse
 
-            if (r % 2 == 0) {
-                sum = sum + r;
+            if (rem % 2 == 0)// to find even numbers
+            {
+                sum = sum + rem;
             }
             n = n / 10;
         }
